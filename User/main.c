@@ -29,6 +29,7 @@ int main(void)
 	
 
     PRINTF("hello world.\r\n");		
+    PRINTF("asdasda\r\n");	
 	while(1)
 	{
 		
