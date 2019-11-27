@@ -21,4 +21,5 @@
 .\objects\main.o: ..\Board\board.h
 .\objects\main.o: ..\Board\clock_config.h
 .\objects\main.o: ..\DRIVER\drivers\fsl_gpio.h
+.\objects\main.o: ..\DRIVER\drivers\fsl_port.h
 .\objects\main.o: ..\Board\pin_mux.h

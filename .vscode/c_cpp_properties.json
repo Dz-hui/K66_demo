@@ -1,17 +1,40 @@
 {
     "configurations": [
         {
-            "name": "Win32",
+            "name": "K66_DEMO",
             "includePath": [
                 "${workspaceFolder}/**",
                 "D:\\Keil_v5\\ARM\\ARMCC\\include",
+                "F:\\VSCodeWorkSpace\\K66_DEMO\\Board",
+                "F:\\VSCodeWorkSpace\\K66_DEMO\\CMSIS\\Driver\\Include",
+                "F:\\VSCodeWorkSpace\\K66_DEMO\\Component-uart",
+                "F:\\VSCodeWorkSpace\\K66_DEMO\\DEVICE",
+                "F:\\VSCodeWorkSpace\\K66_DEMO\\DRIVER\\drivers",
+                "F:\\VSCodeWorkSpace\\K66_DEMO\\Hardward",
+                "F:\\VSCodeWorkSpace\\K66_DEMO\\User",
+                "F:\\VSCodeWorkSpace\\K66_DEMO\\Utulitues\\debug_console",
+                "F:\\VSCodeWorkSpace\\K66_DEMO\\CMSIS\\Include",
+                "F:\\VSCodeWorkSpace\\K66_DEMO\\Utulitues\\str",
+                "F:\\VSCodeWorkSpace\\K66_DEMO\\Component-lists",
+                "F:\\VSCodeWorkSpace\\K66_DEMO\\Component-serial_manager"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE",
-                "__CC_ARM"
-            ]
+                "__CC_ARM",
+                "DEBUG",
+                "CPU_MK66FX1M0VLQ18",
+                "PRINTF_FLOAT_ENABLE=0",
+                "SCANF_FLOAT_ENABLE=0",
+                "PRINTF_ADVANCED_ENABLE=0",
+                "SCANF_ADVANCED_ENABLE=0",
+                "FRDM_K66F",
+                "FREEDOM"
+            ],
+            "compilerPath": "D:\\Program Files\\LLVM\\bin\\clang.exe",
+            "cppStandard": "c++98",
+            "cStandard": "c99"
         }
     ],
     "version": 4

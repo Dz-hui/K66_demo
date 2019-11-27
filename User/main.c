@@ -7,7 +7,8 @@
 
 #include "fsl_device_registers.h"	
 #include "fsl_debug_console.h"		
-#include "board.h"					
+#include "board.h"	
+#include "fsl_port.h"				
 
 #include "pin_mux.h"			
 #include "clock_config.h"		
@@ -22,14 +23,24 @@
 ***********************************************************************/
 int main(void)
 {
+    gpio_pin_config_t led_config={
+        kGPIO_DigitalOutput,
+        0,
+    };
 	 /* Init board hardware. */
     BOARD_InitPins();				
     BOARD_BootClockRUN();			
     BOARD_InitDebugConsole();
 	
+    CLOCK_EnableClock(kCLOCK_PortB);
+    PORT_SetPinMux(PORTB,20U,kPORT_MuxAsGpio);
 
     PRINTF("hello world.\r\n");		
     PRINTF("asdasda\r\n");	
+    
+    
+    GPIO_PinInit(GPIOB,20U, &led_config);
+
 	while(1)
 	{
 		
